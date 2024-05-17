@@ -16,6 +16,7 @@ section.contact-me .subtitle {
 section.contact-me label {
     color: var(--subtitle);
 }
+section.contact-me  #name,
 section.contact-me  #email,
 section.contact-me #message {
     all: unset;
@@ -28,6 +29,7 @@ section.contact-me #message {
     transition: 0.3s;
     font-size: 1.1rem;
 }
+.light section.contact-me  #name,
 .light section.contact-me  #email,
 .light section.contact-me #message {
     background-color: rgba(255, 255, 255, 0.162);
@@ -36,16 +38,19 @@ section.contact-me #message {
     color: #232324;
 
 }
-
+section.contact-me  #name:focus,
 section.contact-me  #email:focus, 
-section.contact-me #message:focus, 
+section.contact-me #message:focus,
+section.contact-me  #name:hover, 
 section.contact-me  #email:hover, 
 section.contact-me #message:hover {
     border: 1px solid rgb(45 212 191);
 }
  
 .light section.contact-me  #email:focus, 
+.light section.contact-me  #name:focus,
 .light section.contact-me #message:focus, 
+.light section.contact-me  #name:hover,
 .light section.contact-me  #email:hover, 
 .light section.contact-me #message:hover {
     border: 1px solid rgb(78 80 80);
@@ -64,6 +69,7 @@ section.contact-me .submit{
     transition: 0.3s;
     margin-top: 1.8rem;
     border: 1px solid rgb(63 63 70) ;
+    color: #fff;
 }
 section.contact-me .submit:hover {
     scale:0.97;

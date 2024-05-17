@@ -27,9 +27,7 @@ header button {
     font-size: 1.2rem;
 }
 
-header button.menu {
-    display: none;
-}
+
 /*Icon Buttons */
 header .fa-solid, header button.mode {
     background-color: var(--bgHeader);
@@ -80,7 +78,7 @@ header .fixed {
 }
 header .fixed ul.modal{
     animation: mymove 0.7s 1;
-    width: 75%;
+    width: 45%;
     margin-inline: auto;
     margin-top: 2rem;
     border-radius: 1rem;

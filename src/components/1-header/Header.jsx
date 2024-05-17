@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import './Header.css';
 
 export default function Header() {
@@ -27,14 +28,10 @@ export default function Header() {
       <div/>  
       <nav>
         <ul className='flex'>
-          <li><a href="#accueil">Accueil</a>
-          </li>
-          <li><a href="#a-propos">A propos de moi</a>
-          </li>
-          <li><a href="#mes-projets">Mes projets</a>
-          </li>
-          <li><a href="#contacts">Contacts</a>
-          </li>
+        <li><a to="/">Accueil</a></li>
+          <li><a to="/a-propos">A propos de moi</a></li>
+          <li><a to="/mes-projets">Mes projets</a></li>
+          <li><a to="/contacts">Contacts</a></li>
         </ul>
 
       </nav>

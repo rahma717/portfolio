@@ -88,17 +88,18 @@ const Main = () => {
             <img width={266} src={item.imgPath} alt="" />
             <div style={{ width: "266px" }} className="box">
               <h1 className='title'>{item.projectTitle}</h1>
-              <p className='subtitle'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium delectus fugit ad, excepturi quae ducimus. Commodi placeat saepe odio maxime officia minus praesentium sint tempore, at culpa, dolor impedit similique?
-              </p>
+             {/* Titre et contenu pour le contexte de la mission */}
+           <p className='subtitle'><strong>Contexte de la mission:</strong> {item.missionContext}</p>
+           {/* Titre et contenu pour les défis techniques */}
+           <p className='subtitle'><strong>Défis techniques:</strong> {item.technicalChallenges}</p>
               <div className="flex icons">
                 <div style={{ gap: "11px" }} className='flex'>
-                  <div><i className="fa-solid fa-link"></i></div>
-                  <div><i className="fa-brands fa-github"></i></div>
+                  <div><a href= {item.websiteUrl}><i className="fa-solid fa-link"></i></a></div>
+                  <div><a href={item.githubUrl}><i className="fa-brands fa-github"></i></a></div>
                 </div>
-                <a className="link flex" href="">
+                <a className="link flex" href={item.url ? item.url :""}>
                   more
-                  <span style={{ alignSelf: "end" }}><i className="fa-solid fa-arrow-right"></i></span>
+                  <span style={{ alignSelf: "end" }}><i style={{color:"var(--blue)"}} className="fa-solid fa-arrow-right"></i></span>
                 </a>
               </div>
             </div>

@@ -25,19 +25,7 @@ section.hero p.title {
     margin: 24px 0 ;
     color: var(--title);
 }
-section.hero .all-icons {
-    font-size: 1.3rem;
-    gap: 1.5rem;
-    color: var(--subtitle);
-}
-section.hero .all-icons > div:hover .fa-brands,
-section.hero .all-icons > div:hover .fa-solid {
-    font-size: 1.4rem;
-    transition: 0.3s;
-    cursor: pointer;
-    color: var(--icon-hover);
-   
-}
+
 /* right-section :animation */
 
 section.hero .animation {

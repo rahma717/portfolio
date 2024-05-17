@@ -83,19 +83,24 @@ main section.right-section.flex {
 .card .box .icons {
     justify-content: space-between;
 }
-.card .fa-solid, .card .fa-brands{
+.card .fa-solid, 
+.card .fa-brands{
     font-size: 1.2rem;
+    color: var(--subtitle);
 }
-.card .fa-solid:hover, .card .fa-brands:hover{
-    font-size: 1.2rem;
+.card .flex a:hover .fa-solid,
+.card .flex a:hover .fa-brands {
     color: var(--icon-hover);
     cursor: pointer;
 }
-.card a.link{
-    font-size: 0.9rem;
+.card a.link {
+    font-size: 1.2rem;
     color: var(--blue);
     margin-right: 12px;
     gap: 0.5rem;
+}
+.subtitle p {
+    color: red;
 }
 @media(max-width: 600px) {
     main.flex {
