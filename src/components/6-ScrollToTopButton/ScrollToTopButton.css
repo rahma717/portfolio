@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: rgba(25, 118, 210, 0.85);
+    background-color: #ff004f;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     width: 2.6rem;
@@ -13,7 +13,7 @@
   }
   
   .scroll2Top:hover {
-    background-color: red; 
+    background-color: #fff; 
   }
   @media (max-width:600px) {
     .scroll2Top {

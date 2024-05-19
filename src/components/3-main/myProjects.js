@@ -32,6 +32,8 @@ export const myProjects = [
     imgPath: "./images/qwenta.png",
     githubUrl: "",
     websiteUrl: "",
+    missionContext: "Au sein de l'agence Webgencia, j'ai été chargé d'un projet unique pour le client Qwenta, visant à lancer <Menu Maker>, une plateforme permettant aux restaurateurs de concevoir leurs menus. Mon rôle principal était de préparer, planifier et définir le projet en collaboration avec le Product Owner, en adoptant une approche AGILE. J'ai mis en place une méthodologie agile avec la méthode Kanban pour gérer les tâches efficacement, en utilisant les maquettes, spécifications fonctionnelles et user stories fournies.",
+technicalChallenges: "Les principaux défis comprenaient la mise en place d'un système de veille pour recueillir des idées pertinentes et réutilisables, la détermination précise des spécifications techniques du <Menu Maker> basées sur les documents fournis et la justification de chaque choix pour satisfaire le client. La planification du projet nécessitait également la configuration d'un outil de gestion de projet, la création d'un tableau Kanban détaillé, et la garantie que toutes les tâches étaient clairement définies et catégorisées. Cela demandait une attention méticuleuse aux détails, une communication ouverte avec l'équipe, et une vision claire de l'objectif final, tout en respectant les principes AGILE pour une gestion flexible et adaptative du projet."
     
   },
   {
@@ -58,6 +60,9 @@ export const myProjects = [
     imgPath: "./images/nina.png",
     githubUrl: "https://github.com/rahma717/ninacarducci.github.io",
     websiteUrl: "",
+    missionContext: "J'ai collaboré avec Nina Carducci, une photographe talentueuse, pour améliorer les performances et le référencement de son site web. Après un audit initial et une proposition d'optimisation, Nina a exprimé un vif intérêt pour mes services. Nous avons défini les détails de la mission lors d'une discussion téléphonique, couvrant l'optimisation globale du site et l'amélioration de son accessibilité.",
+    technicalChallenges: "La mission a présenté plusieurs défis techniques. L'optimisation globale du site nécessitait une approche holistique, incluant la révision du code, l'optimisation des images, et la restructuration de certains éléments pour améliorer la vitesse de chargement. La mise en place du référencement local via Schema.org demandait une attention particulière pour assurer une indexation correcte par les moteurs de recherche. L'ajout de métadonnées pour les réseaux sociaux et l'amélioration de l'accessibilité du site ajoutaient des couches supplémentaires de complexité. Enfin, la production d'un rapport d'optimisation détaillé était essentielle pour démontrer l'impact positif des modifications."
+
     
   },
   {
@@ -66,6 +71,8 @@ export const myProjects = [
     imgPath: "./images/724.png",
     githubUrl: "https://github.com/rahma717/projet_10",
     websiteUrl: "",
+    missionContext: "En tant que développeur front-end freelance, j'ai été sollicité par l'agence événementielle 724events pour finaliser la nouvelle version de leur site vitrine one-page. Le projet, initialement partiellement intégré par un autre développeur freelance, nécessitait des corrections de bugs pour améliorer l'expérience utilisateur. Jean-Baptiste, le directeur Marketing de l'agence, m'a expliqué les enjeux et les attentes lors d'une visioconférence, soulignant l'importance de cette refonte pour l'agence.",
+    technicalChallenges: "La mission présente plusieurs défis techniques, principalement centrés sur la finalisation du site existant. Il était crucial de se familiariser rapidement avec le code pour identifier et corriger les bugs. Le suivi de l'onglet <Issues> a permis de comprendre les tâches restantes et les problèmes signalés par le développeur précédent. La finalisation du cahier de recette nécessitait une approche méthodique pour couvrir tous les scénarios de test et garantir le bon fonctionnement du site. Chaque correction de bug et ajout de fonctionnalité devaient être rigoureusement testés pour assurer une livraison sans faille, répondant aux attentes élevées de l'agence."
     
   }
 ];

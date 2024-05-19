@@ -1,6 +1,6 @@
 import  './Hero.css';
 import Lottie from "lottie-react";
-import developerAnimation from "../../animation/developer.json";
+import computerAnimation from "../../animation/computer.json";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
@@ -22,7 +22,7 @@ const Hero = () => {
         
       </div>
       <div className='right-section animation'>
-      <Lottie animationData={developerAnimation} />
+      <Lottie animationData={computerAnimation} />
       </div>
     </section>
   );

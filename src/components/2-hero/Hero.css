@@ -14,7 +14,7 @@ section.hero .photo{
     width: 88px;
     height: 88px;
     border-radius: 50%;
-    border: 1px solid var(--blue);
+    border: 1px solid rgba(244, 165, 96, 0.249);
     padding: 3px;
     box-shadow: 2px 2px 40px rgb(203, 200, 200, 0.301) inset;
     margin-right: 0.6rem;
@@ -30,7 +30,7 @@ section.hero p.title {
 
 section.hero .animation {
     width: 100%;
-    translate: 100px 55px;
+    translate: 75px 35px;
 }
 
 @media(max-width: 1250px) {

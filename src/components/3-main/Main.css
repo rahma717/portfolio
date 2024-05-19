@@ -4,13 +4,12 @@ main.flex {
 }
 
 /* Left section ==> Buttons */
-
 main section.left-section.flex {
     flex-direction: column;
     gap: 10px;
 }
 main section.left-section.flex button {
-    background-color: rgba(36, 37, 46, 1) ;
+    background-color: rgba(36, 37, 46, 1);
     width: 11rem;
     padding: 0.75rem 0;
     text-align: center;
@@ -24,17 +23,17 @@ main section.left-section.flex button:hover {
     opacity: 1;
 }
 main section.left-section.flex button.active {
-     opacity: 1;
-     font-weight: bold;
-     letter-spacing: 0.6px;
-     padding: 0.8rem 0;
-     border: 1px solid var(--blue);
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    padding: 0.8rem 0;
+    border: 1px solid var(--blue);
 }
 .light main section.left-section.flex button.active {
     border: 1px solid #0000;
 }
-/* Right section ==> card */
 
+/* Right section ==> card */
 main section.right-section.flex {
     flex-grow: 1;
     flex-wrap: wrap;
@@ -44,12 +43,12 @@ main section.right-section.flex {
 }
 .card {
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(93, 188,252, 0.3);
+    border: 1px solid rgba(93, 188, 252, 0.3);
     border-radius: 5px;
     transition: 0.3s;
     background-image: linear-gradient(
-    rgba(255, 255, 25, 0.05),
-    rgba(255, 255, 25, 0.05)
+        rgba(255, 255, 25, 0.05),
+        rgba(255, 255, 25, 0.05)
     );
 }
 .light .card, .light .card:hover {
@@ -61,13 +60,11 @@ main section.right-section.flex {
     rotate: 1deg;
     scale: 1.01;
     cursor: pointer;
-    
 }
-.card img{
-    border-radius: 5px; 
+.card img {
+    border-radius: 5px;
 }
-
-.card .box{
+.card .box {
     padding: 1rem 0.4rem;
 }
 .card .box .title {
@@ -82,9 +79,10 @@ main section.right-section.flex {
 }
 .card .box .icons {
     justify-content: space-between;
+    margin-top: 2rem;
 }
-.card .fa-solid, 
-.card .fa-brands{
+.card .fa-solid,
+.card .fa-brands {
     font-size: 1.2rem;
     color: var(--subtitle);
 }
@@ -102,7 +100,10 @@ main section.right-section.flex {
 .subtitle p {
     color: red;
 }
-@media(max-width: 600px) {
+.more-button {
+    color: var(--blue);
+}
+@media (max-width: 600px) {
     main.flex {
         flex-direction: column;
         gap: 2.64rem;
@@ -117,6 +118,57 @@ main section.right-section.flex {
     main section.left-section.flex button {
         width: 7rem;
         padding: 0.8rem 0;
-        font-size: 0.9rem;   
+        font-size: 0.9rem;
     }
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.popup-content {
+    background-color: rgba(40, 40, 48, 0.91);
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    animation: mymove 0.7s 1;
+    max-height: 80%;
+    overflow: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 13px;
+    right: 17px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, .7);
+    transition: opacity .2s;
+}
+.popup-content i.fa-bars {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Animation */
+@keyframes mymove {
+    0% { scale: 0; }
+    50% { scale: 1.2; }
+    100% { scale: 1; }
 }
