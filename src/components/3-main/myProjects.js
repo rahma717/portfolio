@@ -2,7 +2,7 @@ export const myProjects = [
   {
     projectTitle: "Booki - CSS Project",
     category: ["html", "css", "SASS"],
-    imgPath: "./images/Booki.png",
+    imgPath: "./images/booki.webp",
     githubUrl: "https://github.com/rahma717/projet3_Booki",
     websiteUrl: "",
     missionContext: "Booki, une entreprise innovante, cherche à transformer la planification de voyages en offrant une plateforme pour découvrir des hébergements et des activités urbaines. Ma mission principale consistait à intégrer l'interface du site web en utilisant HTML et CSS, en adaptant les maquettes pour desktop, tablette et mobile en un site fonctionnel et réactif. Travaillant en étroite collaboration avec la CTO et l'UI designer, j'ai reçu une structure de fichiers initiale comprenant du code HTML et CSS de base et des images pour le site. Avec des spécifications techniques bien définies, mon défi était de compléter et optimiser le code tout en respectant la vision de l'équipe et la structure de dossiers fournie. Cette collaboration interdisciplinaire visait à offrir une expérience utilisateur fluide et intuitive pour les voyageurs.",
@@ -11,7 +11,7 @@ export const myProjects = [
   {
     projectTitle: "Oh My Food - CSS Project",
     category: ["html", "css", "SASS"],
-    imgPath: "./images/ohMyFood.png",
+    imgPath: "./images/ohMyFood.webp",
     githubUrl: "https://github.com/rahma717/projet4_ohmyfood_OpenClassrooms",
     websiteUrl: "https://rahma717.github.io/projet4_ohmyfood_OpenClassrooms/",
     missionContext: "OhMyFood est une initiative innovante visant à transformer l'expérience gastronomique en permettant aux clients de précomposer leurs menus dans des restaurants gastronomiques, réduisant ainsi les temps d'attente. L'équipe d'OhMyFood a collaboré avec quatre restaurateurs pour lancer cette plateforme. Ma mission consistait à concrétiser cette vision en créant un site web \"mobile first\" à partir des maquettes fournies par l'UX designer. Ces maquettes, conçues pour mobile, tablette et desktop, étaient accompagnées d'un prototype détaillé sur Figma, illustrant les animations et comportements souhaités. Le défi était de développer un site responsive fidèle au design et d'intégrer des animations soignées pour améliorer l'expérience utilisateur.",
@@ -20,7 +20,7 @@ export const myProjects = [
   {
     projectTitle: "Sophie Bluel - JavaScript Project",
     category: ["javascript"],
-    imgPath: "./images/sophieBluel.png",
+    imgPath: "./images/sophieBluel.webp",
     githubUrl: "https://github.com/rahma717/projet-6",
     websiteUrl: "",
     missionContext: "J'ai rejoint l'équipe d'ArchiWebos, une agence réputée de 50 employés, pour aider à concevoir un site portfolio pour l'architecte d'intérieur Sophie Bluel. L'agence avait déjà créé une version statique de la page et défini le design sur Figma. Ma mission était d'intégrer de nouvelles fonctionnalités, d'assurer la persistance des données et de dynamiser le site en collaborant étroitement avec l'équipe. J'ai été fourni avec les ressources nécessaires, y compris le code existant et un Kanban détaillé.",
@@ -29,7 +29,7 @@ export const myProjects = [
   {
     projectTitle: "Qwenta - Agile Project Management",
     category: ["agile"],
-    imgPath: "./images/qwenta.png",
+    imgPath: "./images/qwenta.webp",
     githubUrl: "",
     websiteUrl: "",
     missionContext: "Au sein de l'agence Webgencia, j'ai été chargé d'un projet unique pour le client Qwenta, visant à lancer <Menu Maker>, une plateforme permettant aux restaurateurs de concevoir leurs menus. Mon rôle principal était de préparer, planifier et définir le projet en collaboration avec le Product Owner, en adoptant une approche AGILE. J'ai mis en place une méthodologie agile avec la méthode Kanban pour gérer les tâches efficacement, en utilisant les maquettes, spécifications fonctionnelles et user stories fournies.",
@@ -39,7 +39,7 @@ technicalChallenges: "Les principaux défis comprenaient la mise en place d'un s
   {
     projectTitle: "Kasa - React Project with Redux",
     category: ["react", "Redux"],
-    imgPath: "./images/kasa.png",
+    imgPath: "./images/kasa.webp",
     githubUrl: "https://github.com/rahma717/projet-8",
     websiteUrl: "",
     missionContext: "Kasa m'a engagé pour améliorer leur site web. Ils voulaient passer d'ASP.NET à JavaScript avec NodeJS pour le back-end et React pour le front-end. Mon travail consistait à commencer le projet React et à le développer en suivant les plans fournis. J'ai collaboré avec le designer pour m'assurer que le design et les fonctions soient respectés.",
@@ -48,7 +48,7 @@ technicalChallenges: "Les principaux défis comprenaient la mise en place d'un s
   {
     projectTitle: "Argent Bank - React Project with Redux",
     category: ["react", "Redux"],
-    imgPath: "./images/ArgentBank.png",
+    imgPath: "./images/argent.webp",
     githubUrl: "https://github.com/rahma717/ArgentBank-website",
     websiteUrl: "",
     missionContext: "Argent Bank, une nouvelle banque en ligne ambitieuse, m'a confié la mission de collaborer avec la cheffe de projet pour la mise en place du tableau de bord des utilisateurs. Cette initiative est cruciale pour l'entreprise, car elle vise à offrir une expérience utilisateur exceptionnelle. Le projet est divisé en deux phases : la première consiste à mettre en place l'authentification des utilisateurs et un tableau de bord fonctionnel, tandis que la deuxième se concentrera sur la gestion des transactions.",
@@ -57,7 +57,7 @@ technicalChallenges: "Les principaux défis comprenaient la mise en place d'un s
   {
     projectTitle: "Nina - SEO Project",
     category: ["SEO"],
-    imgPath: "./images/nina.png",
+    imgPath: "./images/nina.webp",
     githubUrl: "https://github.com/rahma717/ninacarducci.github.io",
     websiteUrl: "",
     missionContext: "J'ai collaboré avec Nina Carducci, une photographe talentueuse, pour améliorer les performances et le référencement de son site web. Après un audit initial et une proposition d'optimisation, Nina a exprimé un vif intérêt pour mes services. Nous avons défini les détails de la mission lors d'une discussion téléphonique, couvrant l'optimisation globale du site et l'amélioration de son accessibilité.",
@@ -68,7 +68,7 @@ technicalChallenges: "Les principaux défis comprenaient la mise en place d'un s
   {
     projectTitle: "Debugging Tool - Testing Project",
     category: ["tests"],
-    imgPath: "./images/724.png",
+    imgPath: "./images/724.webp",
     githubUrl: "https://github.com/rahma717/projet_10",
     websiteUrl: "",
     missionContext: "En tant que développeur front-end freelance, j'ai été sollicité par l'agence événementielle 724events pour finaliser la nouvelle version de leur site vitrine one-page. Le projet, initialement partiellement intégré par un autre développeur freelance, nécessitait des corrections de bugs pour améliorer l'expérience utilisateur. Jean-Baptiste, le directeur Marketing de l'agence, m'a expliqué les enjeux et les attentes lors d'une visioconférence, soulignant l'importance de cette refonte pour l'agence.",

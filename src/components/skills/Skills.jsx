@@ -85,9 +85,9 @@ const Skills = () => {
             </div>
             <div className={`tab-contents ${activeTab === 'education' ? 'active-tab' : ''}`} id="education">
               <ul>
-                <li><span>2022-2023<br /></span>Intégrateur Web – React<br />OpenClassrooms</li>
+                <li><span>2022-2024<br /></span>Intégrateur Web- React<br/>OpenClassrooms</li>
                 <li><span>30 octobre 2023<br /></span>Certificat formation développement web<br />CIFOP-IMS</li>
-                <li><span>13 juin 2023<br /></span>Certificat SASS & SCSS<br />Udemy</li>
+                <li><span>13 juin 2023<br /></span>Certificat SASS & SCSS<br/>Udemy</li>
                 <li><span>2014-2017<br /></span>Licence Appliquée en sciences infirmières</li>
                 <li><span>2013-2014<br /></span>Diplôme du baccalauréat scientifique</li>
               </ul>

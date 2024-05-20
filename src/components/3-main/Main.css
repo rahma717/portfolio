@@ -62,6 +62,9 @@ main section.right-section.flex {
     cursor: pointer;
 }
 .card img {
+    width: 266px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 5px;
 }
 .card .box {
@@ -150,21 +153,41 @@ main section.right-section.flex {
 
 .close-btn {
     position: absolute;
-    top: 13px;
-    right: 17px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: rgba(255, 255, 255, .7);
-    transition: opacity .2s;
-}
-.popup-content i.fa-bars {
-    position: absolute;
     top: 10px;
     right: 10px;
-    color: white;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-}
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-btn i {
+    font-size: 24px;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  
+  .close-btn .close-line {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin-top: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-btn:hover i {
+    color: white;
+  }
+  
+  .close-btn:hover .close-line {
+    background-color: white;
+  }
 
 /* Animation */
 @keyframes mymove {

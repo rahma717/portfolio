@@ -89,7 +89,7 @@ const Main = () => {
               key={item.imgPath}
               className='card'
             >
-              <img width={266} src={item.imgPath} alt="" />
+              <img src={item.imgPath} alt="" />
               <div style={{ width: "266px" }} className="box">
                 <h1 className='title'>{item.projectTitle}</h1>
                 <div className="flex icons">
@@ -117,7 +117,9 @@ const Main = () => {
       {showPopup && selectedProject && (
         <div className="popup active">
           <div className="popup-content">
-            <button className="close-btn" onClick={closePopup}><i className="fa-solid fa-x style={{ position: 'absolute', top: '10px', right: '10px' }}>"></i></button>
+            <button className="close-btn" onClick={closePopup}>
+              <i className="fa-solid fa-x style={{ position: 'absolute', top: '10px', right: '10px' }}>"></i>
+            </button>
             <h2>{selectedProject.projectTitle}</h2>
             <p><strong>Contexte de la mission:</strong> {selectedProject.missionContext}</p>
             <p><strong>Défis techniques:</strong> {selectedProject.technicalChallenges}</p>

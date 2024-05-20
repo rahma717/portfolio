@@ -18,8 +18,11 @@ const Hero = () => {
         initial={{scale: 0}}
         animate={{scale: 1}} 
         transition={{duration: 2}}
-        className='title'>Je suis une développeuse Front-end innovante et proactive, dotée de compétences solides en développement de sites web dynamiques. Je maîtrise efficacement les outils de développement et je suis constamment à la recherche d&apos;une nouvelle opportunité pour mon premier emploi dans le domaine de l&apos;informatique.</motion.p>
+        className='title'> 
+        Bienvenue ! Je m&apos;appelle RAHMA, développeuse Front-end passionnée par le développement de sites web dynamiques.<br/> Pour télécharger mon CV au format PDF, c&apos;est par <a href="./CV.pdf" target="_blank" className='cv-link'>ici</a>.
+       </motion.p>
         
+
       </div>
       <div className='right-section animation'>
       <Lottie animationData={computerAnimation} />

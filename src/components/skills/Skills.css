@@ -48,17 +48,17 @@
 }
 
 .tab-links:hover {
-    color: #ff004f;
+    color: var(--blue);
 }
 
 .tab-links::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: var(--blue);
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -1px;
     margin-left: 0.6rem;
     transition: width 0.5s;
 }
@@ -79,7 +79,7 @@
 }
 
 .tab-contents ul li span {
-    color: #ff004f;
+    color: var(--blue);
     font-size: 16px;
     font-weight: bold;
 }
@@ -95,15 +95,15 @@
 .skill-item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px; /* Espacement entre les compétences */
+    margin-bottom: 20px; /
   }
   
   .skill-item:last-child {
-    margin-bottom: 0; /* Supprimer l'espacement du dernier élément */
+    margin-bottom: 0; 
   }
   .skill-item i {
     font-size: 36px;
-    color: #ff004f;
+    color: var(--blue);
     margin-right: 15px;
   }
   .skill-item p {
@@ -112,17 +112,17 @@
     color: #fff;
   }
   .skill-info {
-    margin-left: 10px; /* Espacement entre l'icône et les informations de compétence */
+    margin-left: 10px; 
   }
   
   .skill-info p {
     margin: 0;
-    font-size: 18px; /* Taille du texte de compétence */
+    font-size: 18px; 
   }
   
   .progress {
-    width: 200px; /* Largeur initiale de la barre de progression */
-    height: 20px; /* Hauteur de la barre de progression */
+    width: 200px; 
+    height: 20px; 
     background-color: #f5f5f5;
     border-radius: 10px;
     overflow: hidden;
@@ -136,7 +136,7 @@
     text-align: center;
     background-color: #007bff;
     border-radius: 10px;
-    animation: progress-animation 2s ease; /* Animation de la barre de progression */
+    animation: progress-animation 2s ease; 
   }
   
   @keyframes progress-animation-once {
@@ -145,6 +145,63 @@
   }
  
   .stop-animation {
-    animation: none !important; /* Arrête l'animation lorsque cette classe est présente */
+    animation: none !important; 
   }
- 
+  @media(max-width: 1250px) {
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .tab-titles {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tab-links {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .tab-links.active-link::after {
+        width: 20%;
+    }
+    .tab-contents {
+        max-width: 800px;
+    }
+    .progress {
+        width: 150px; 
+        margin-left: 20px;
+    }
+}
+
+@media(max-width: 700px) { 
+    .sub-title {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .tab-titles {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tab-links {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .tab-links.active-link::after {
+        width: 15%;
+    }
+    .tab-contents {
+        max-width: 600px;
+    }
+    .skill-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .progress {
+        margin-left: 0;
+    }
+}
