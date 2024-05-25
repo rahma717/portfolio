@@ -15,7 +15,7 @@ const Contact = () => {
       </h1>
     <div style={{justifyContent: "space-between"}} className="flex">
         <form onSubmit={handleSubmit} >
-          <div className='flex' style={{marginTop: "4rem"}}>
+          <div className='flex justify-between' style={{marginTop: "4rem"}}>
             <label htmlFor='name'>Your name:</label>
             <input autoComplete='off' required type='text' name='name' id='name' placeholder='Your name'/>
             <ValidationError 
@@ -24,7 +24,7 @@ const Contact = () => {
               errors={state.errors}
             />
           </div>
-          <div className='flex' style={{marginTop: "24px"}}>
+          <div className='flex justify-between' style={{marginTop: "24px"}}>
             <label htmlFor='email'>Your Email:</label>
             <input autoComplete='off' required type='email' name='email' id='email' placeholder='Your Email'/>
             <ValidationError 
@@ -33,7 +33,7 @@ const Contact = () => {
               errors={state.errors}
             />
           </div>
-          <div className='flex' style={{marginTop: "24px"}}>
+          <div className='flex justify-between' style={{marginTop: "24px"}}>
             <label htmlFor='message'>Your message:</label>
             <textarea required name='message' id='message' placeholder='Your message'></textarea>
             <ValidationError 

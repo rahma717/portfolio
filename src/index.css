@@ -128,12 +128,12 @@ button:disabled {
   border-radius: 1rem;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(270deg, #9e4673, #3d4a59, #9e4673);
+  background:#aaa;
   
 }
 /* for firefox */
 html {
-  scrollbar-color:#9e4673, #3d4a59 ;
+  scrollbar-color:#888 #232943 ;
 }
 
 

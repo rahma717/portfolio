@@ -51,7 +51,7 @@ export default function Header() {
       <div className='fixed'>
           <ul className='modal'>
             <li>
-            <button className='close close-button' onClick={() => setshowModal(false)}>
+            <button className='close close-button' onClick={() => setshowModal(false)} aria-label='Fermer'>
             <span className='icon-close'><i className="fa-solid fa-x flex"></i></span>
             </button>
             </li>
@@ -66,11 +66,6 @@ export default function Header() {
   )
 }
 
-{/* 
 
 
 
-<i className="fa-solid fa-arrow-up"></i>
-
-<i className="fa-solid fa-xmark"></i>
-<i className="fa-solid fa-circle-xmark"></i> */}

@@ -8,7 +8,7 @@ const Skills = () => {
   useEffect(() => {
     // Mettre à jour l'état de l'animation après le chargement initial de la page
     setAnimationStopped(true);
-    // Arrêter l'animation après un certain délai (par exemple, 2 secondes)
+    // Arrêter l'animation après un certain délai
   const timeout = setTimeout(() => {
     setAnimationStopped(false);
   }, 2000);
@@ -29,14 +29,12 @@ const Skills = () => {
   ];
 
   return (
-    <div id="about">
+  
       <div className="block">
-        <div className="row">
-          <div className="about-col-2">
-            <h1 className="sub-title">About me</h1>
-            <p>
-            Je suis une développeuse Front-end innovante et proactive, dotée de compétences solides en développement de sites web dynamiques. Je maîtrise efficacement les outils de développement et je suis constamment à la recherche d&#39;une nouvelle opportunité pour mon premier emploi dans le domaine de l&#39;informatique.
-            </p>
+       
+         
+            
+            
             <div className="tab-titles">
               <p
                 className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`}
@@ -93,9 +91,9 @@ const Skills = () => {
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+        
+      
+  
   );
 }
 

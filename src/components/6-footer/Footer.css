@@ -28,19 +28,7 @@ footer.flex .all-icons > div:hover .fa-solid {
     color: var(--icon-hover);
    
 }
-/* footer.flex ul {
-    gap: 1rem;
-}
-footer.flex ul a {
-    color: var(--subtitle);
-    font-size: 0.9rem;
-    font-weight: 400;
-}
-footer.flex ul a:hover{
-    color: var(--blue);
-    font-size: 1rem;
-    font-weight: 500;
-} */
+
 footer.flex p{
     color: var(--subtitle) ;
 }

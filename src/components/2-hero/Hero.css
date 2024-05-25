@@ -11,19 +11,25 @@ span.icon-check .fa-solid {
     margin-bottom: 0.3rem;
 }
 section.hero .photo{
-    width: 88px;
-    height: 88px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 1px solid rgba(244, 165, 96, 0.249);
     padding: 3px;
     box-shadow: 2px 2px 40px rgb(203, 200, 200, 0.301) inset;
     margin-right: 0.6rem;
 }
-section.hero p.title {
-    font-size: 1.5rem;
+section.hero h1.title {
+    font-size: 2rem;
     line-height: 3rem;
     margin: 24px 0 ;
     color: var(--title);
+}
+section.hero p.subtitle {
+    color: var(--subtitle);
+    font-size: 1.1rem;
+    line-height: 1.65rem;
+    margin-bottom: 32px;
 }
 .cv-link {
     color: inherit; 

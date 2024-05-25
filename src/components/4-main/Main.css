@@ -56,10 +56,11 @@ main section.right-section.flex {
 }
 .card:hover {
     border: 1px solid var(--blue);
-    background-color: rgba(246, 246, 246);
+    /* background-color: rgba(246, 246, 246); */
     rotate: 1deg;
     scale: 1.01;
     cursor: pointer;
+
 }
 .card img {
     width: 266px;
@@ -139,7 +140,7 @@ main section.right-section.flex {
     z-index: 10;
 }
 .popup-content {
-    background-color: rgba(40, 40, 48, 0.91);
+    background-color:var(--secondary);
     backdrop-filter: blur(4px);
     padding: 20px;
     border-radius: 5px;
@@ -150,7 +151,22 @@ main section.right-section.flex {
     max-height: 80%;
     overflow: auto;
 }
+.popup-content h2 {
+    color: var(--blue);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
 
+.popup-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: var(--subtitle);
+}
+.popup-content p strong {
+    color: var(--blue);
+    font-size: 1.2rem;
+}
 .close-btn {
     position: absolute;
     top: 10px;
