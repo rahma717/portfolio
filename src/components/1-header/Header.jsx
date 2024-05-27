@@ -18,11 +18,15 @@ export default function Header() {
     }
   }, [theme]);
 
+  const handleLinkClik = () => {
+    setshowModal(false);
+  };
+
   return (
     <header className='flex'>
       <button onClick={() => {
         setshowModal(true)
-      }}className='menu'> 
+      }}className='menu'>
       <i className="fa-solid fa-bars flex"></i>  
       </button>
       <div/>  
@@ -55,10 +59,10 @@ export default function Header() {
             <span className='icon-close'><i className="fa-solid fa-x flex"></i></span>
             </button>
             </li>
-            <li><a href="#hero">Accueil</a></li>
-            <li><a href="#skills">À propos de moi</a></li>
-            <li><a href="#mes-projets">Mes projets</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#hero" onClick={handleLinkClik}>Accueil</a></li>
+            <li><a href="#skills" onClick={handleLinkClik}> À propos de moi</a></li>
+            <li><a href="#mes-projets" onClick={handleLinkClik}>Mes projets</a></li>
+            <li><a href="#contacts" onClick={handleLinkClik}>Contacts</a></li>
           </ul> 
       </div>
 )}

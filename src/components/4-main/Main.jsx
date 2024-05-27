@@ -29,8 +29,12 @@ const Main = () => {
 
   const closePopup = () => {
     setShowPopup(false);
+    setArr(myProjects);
+    setCurrentActive("all");
   };
-
+const handleArrowClick = (project) => {
+  openPopup(project);
+};
   return (
     <main id='mes-projets' className='flex'>
       <section className='flex left-section'>
@@ -94,16 +98,17 @@ const Main = () => {
                 <h1 className='title'>{item.projectTitle}</h1>
                 <div className="flex icons">
                   <div style={{ gap: "11px" }} className='flex'>
-                    <div>
+                    {/* <div>
                       <a href={item.websiteUrl}><i className="fa-solid fa-link"></i></a>
-                    </div>
+                    </div> */}
                     <div>
-                      <a href={item.githubUrl}><i className="fa-brands fa-github"></i></a>
+                      <a href={item.githubUrl} className="github-link"> 
+                      <span>Lien Github</span><i className="fa-brands fa-github"></i></a>
                     </div>
                   </div>
                   <div className="link flex">
                     <button onClick={() => openPopup(item)} className="more-button">more</button>
-                    <span style={{ alignSelf: "end" }}>
+                    <span onClick={() => handleArrowClick(item)} style={{ alignSelf: "end" }}>
                       <i style={{ color: "var(--blue)", marginTop: "0.2rem" }} className="fa-solid fa-arrow-right"></i>
                     </span>
                   </div>

@@ -88,6 +88,20 @@ main section.right-section.flex {
     justify-content: space-between;
     margin-top: 2rem;
 }
+.github-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color: var(--subtitle); 
+    margin-right: 10px;
+  }
+  
+.github-link span {
+    margin-right: 5px;
+  }
+.github-link :hover{
+    color: var(--icon-hover);
+}
 .card .fa-solid,
 .card .fa-brands {
     font-size: 1.2rem;
