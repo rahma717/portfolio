@@ -4,14 +4,14 @@ import computerAnimation from "../../animation/computer.json";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
-    <section className='hero flex'>
+    <section id='hero' className='hero flex'>
       <div className='left-section'>
         <div className='my-photo'>
           <motion.img 
           initial={{transform: "scale(0)"}}
           animate={{transform: "scale(1.1)"}} 
           transition={{damping: 6, type: "spring", stiffness: 100}}
-          src="./myphoto.png" className='photo' alt='ma photo'/>
+          src="./myphoto-modified.webp" className='photo' alt='ma photo'/>
           <span className='icon-check'><i className="fa-solid fa-circle-check"></i></span>
         </div>
         <motion.h1 

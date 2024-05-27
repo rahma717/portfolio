@@ -30,12 +30,8 @@ const Skills = () => {
 
   return (
   
-      <div className="block">
-       
-         
-            
-            
-            <div className="tab-titles">
+      <div id='skills' className="block">
+           <div className="tab-titles">
               <p
                 className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`}
                 onClick={() => handleTabClick('skills')}
@@ -91,8 +87,6 @@ const Skills = () => {
               </ul>
             </div>
           </div>
-        
-      
   
   );
 }

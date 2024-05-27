@@ -22,14 +22,14 @@ export default function Header() {
     <header className='flex'>
       <button onClick={() => {
         setshowModal(true)
-      }}className='menu'>
+      }}className='menu'> 
       <i className="fa-solid fa-bars flex"></i>  
       </button>
       <div/>  
       <nav>
         <ul className='flex'>
-        <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#about">A propos de moi</a></li>
+        <li><a href="#hero">Accueil</a></li>
+          <li><a href="#skills">À propos de moi</a></li>
           <li><a href="#mes-projets">Mes projets</a></li>
           <li><a href="#contacts">Contacts</a></li>
         </ul>
@@ -55,8 +55,8 @@ export default function Header() {
             <span className='icon-close'><i className="fa-solid fa-x flex"></i></span>
             </button>
             </li>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#about">A propos de moi</a></li>
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#skills">À propos de moi</a></li>
             <li><a href="#mes-projets">Mes projets</a></li>
             <li><a href="#contacts">Contacts</a></li>
           </ul> 

@@ -56,7 +56,6 @@ main section.right-section.flex {
 }
 .card:hover {
     border: 1px solid var(--blue);
-    /* background-color: rgba(246, 246, 246); */
     rotate: 1deg;
     scale: 1.01;
     cursor: pointer;
@@ -70,6 +69,10 @@ main section.right-section.flex {
 }
 .card .box {
     padding: 1rem 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 132px;
 }
 .card .box .title {
     color: var(--title);
@@ -106,6 +109,7 @@ main section.right-section.flex {
 }
 .more-button {
     color: var(--blue);
+    margin-right: 6px;
 }
 @media (max-width: 600px) {
     main.flex {
@@ -210,4 +214,40 @@ main section.right-section.flex {
     0% { scale: 0; }
     50% { scale: 1.2; }
     100% { scale: 1; }
+}
+/* Responsive popup*/
+@media (max-width: 600px) {
+    .popup-content {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .popup-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .popup-content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 0.75rem;
+    }
+    
+    .popup-content p strong {
+        font-size: 1rem;
+    }
+    
+    .close-btn {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .close-btn i {
+        font-size: 20px;
+    }
+    
+    .close-btn .close-line {
+        width: 18px;
+        height: 2px;
+    }
 }
