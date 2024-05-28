@@ -1,4 +1,4 @@
-
+import { useState } from 'react';
 import Header from './components/1-header/Header';
 import Hero from './components/2-hero/Hero';
 import Skills from './components/3-skills/Skills';
@@ -10,15 +10,18 @@ import './App.css';
 
 
 function App() {
+  const [activeTab, setActiveTab] = useState('skills');
+    // État pour suivre la catégorie actuellement active
+  const [currentActive, setCurrentActive] = useState("all");
   return (
    
     <div className='container'>
-    <Header/>
+    <Header setActiveTab={setActiveTab} setCurrentActive={setCurrentActive} />
     <Hero/>
     <div className='line'/>
-    <Skills/>
+    <Skills activeTab={activeTab} setActiveTab={setActiveTab}/>
     <div className='line'/>
-    <Main/>
+    <Main currentActive={currentActive} setCurrentActive={setCurrentActive}  />
     <div className='line'/>
     <Contact/>
     <div className='line'/>

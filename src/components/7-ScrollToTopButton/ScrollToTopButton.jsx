@@ -20,7 +20,7 @@ function ScrollToTopButton() {
     return (
       <>
       
-      <a style={{opacity: showScrollBTN? 1 : 0,transition:"1s"}} href='#up'> <button className='scroll2Top' onClick={scrollToTop}>
+      <a style={{opacity: showScrollBTN? 1 : 0,transition:"1s"}} href='#up'> <button aria-label='scroll en haut de la page' className='scroll2Top' onClick={scrollToTop}>
       <span><i className="fa-solid fa-circle-up"></i></span>
       </button>
       </a>

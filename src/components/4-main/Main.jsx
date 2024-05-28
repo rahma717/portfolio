@@ -1,40 +1,49 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Main.css';
 import { myProjects } from "./myProjects";
 import { AnimatePresence, motion } from "framer-motion";
 
-const Main = () => {
-  const [currentActive, setCurrentActive] = useState("all");
+const Main = ({ currentActive, setCurrentActive}) => {
+
+  // État pour stocker les projets filtrés
   const [arr, setArr] = useState(myProjects);
+  // État pour le projet sélectionné pour la popup
   const [selectedProject, setSelectedProject] = useState(null);
+  // État pour contrôler l'affichage de la popup
   const [showPopup, setShowPopup] = useState(false);
 
+// Fonction de gestion des clics sur les boutons de catégorie
   const handleClick = (buttonCategory) => {
     setCurrentActive(buttonCategory);
 
-    if (buttonCategory === "all") {
-      setArr(myProjects);
-    } else {
-      const newArr = myProjects.filter((item) =>
-        item.category.includes(buttonCategory)
-      );
-      setArr(newArr);
-    }
   };
-
+// Fonction pour ouvrir la popup avec les détails du projet
   const openPopup = (project) => {
     setSelectedProject(project);
     setShowPopup(true);
   };
-
+ // Fonction pour fermer la popup et réinitialiser l'état
   const closePopup = () => {
     setShowPopup(false);
     setArr(myProjects);
     setCurrentActive("all");
   };
+  // Fonction pour gérer le clic sur les flèches et ouvrir la popup
 const handleArrowClick = (project) => {
   openPopup(project);
 };
+
+useEffect(() => {
+// Filtrer les projets selon la catégorie sélectionnée
+    if (currentActive === "all") {
+      setArr(myProjects);
+    } else {
+      const newArr = myProjects.filter((item) =>
+        item.category.includes(currentActive)
+      );
+      setArr(newArr);
+    }
+}, [currentActive])
   return (
     <main id='mes-projets' className='flex'>
       <section className='flex left-section'>

@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import './Skills.css';
 
-const Skills = () => {
-  const [activeTab, setActiveTab] = useState('skills');
+const Skills = ({ activeTab, setActiveTab}) => {
+  
   const [animationStopped, setAnimationStopped] = useState(false);
 
   useEffect(() => {
